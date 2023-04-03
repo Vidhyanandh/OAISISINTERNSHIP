@@ -1,0 +1,136 @@
+<!doctype html>
+<head>
+    <title>LoginPage</title>
+    <link rel="icon" href="favicon.ico.jpg">
+    <style>
+        body
+        {
+        margin:0;
+        padding:0;
+        font-family:serin-serif;
+        background-image: url(loginbackground.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment:cover;
+        height: 100vh;
+        overflow: hidden;
+        }
+
+        .text
+        {
+            color:black;
+        }
+        #login
+        {
+            border: 2px;
+            color:black;
+        }
+        .center
+        {
+         position: absolute;
+         align:center;
+         top:30%;
+         right:38%;
+         bottom:36%;
+         width:300px;
+         background:white;
+         border-radius: 20px;
+        }
+        center 
+        {
+            text-align: center;
+           
+            
+        }
+        .center form
+        {
+            padding:0 30px;
+            box-sizing: border-box;
+        }
+        form text input
+        {
+            width: 100%;
+            padding: 0 5px;
+            height: 30px;
+        }
+        .pass
+        {
+            margin:2px 0 10px 5px;
+            color:red;
+            cursor: pointer;
+
+        }
+        .pass:hover
+        {
+            text-decoration: underline;
+
+        }
+        .a1
+        {
+            margin: 0px;
+            padding: 50px;
+            box-sizing:border-box;
+            font-family: arial;
+   
+    
+        }
+        p{
+    
+    justify-content: center;
+    align-items: center;
+    min-height: 20vh;
+   
+    color:aqua;
+        }
+        .a1 {
+                animation: blinker 0.5s linear infinite;
+                color:honeydew;
+                font-family: Arial;
+                font-size: large;
+                font-style: italic;
+                font-stretch: condensed;
+            }
+            @keyframes blinker {
+                10% {
+                    opacity: 200;
+                }
+            }
+    
+
+
+
+
+        
+        
+        
+    </style>
+</head>
+<body>
+    <div id="text">
+    <marquee class="a1" behavoiur="scroll" scrollamount="13">Forget about the daily stress and come relax with us. After tasting any of our menu items, you will never want to leave!"</marquee>
+</div>
+    <div class="center">
+        <h1 id="login">Login</h1>
+        <form method="post">
+            <div class="text">
+                <label>USERNAME</label>
+                <input type="text" required>
+                
+            </div>
+            <div class="text">
+                <label>PASSWORD</label>
+                <input type="PASSWORD" required>
+               
+            </div>
+            <div class="pass">Forgot Password?</div>
+            <input type="submit" value="login">
+            <div class="signup">
+               not a member? <a href="#">signup</a>
+
+            </div>
+        </form>
+      <br>
+      <br>
+       
+    </div>
+</body>
